@@ -8,8 +8,10 @@ class transportcenter(object):
         self.spaces = spaces - self.numunits
         if self.spaces > spaces:
             print("more units are going out than coming in")
+            self.spaces = spaces
         if self.spaces < 0:
             print("too many units are here currently")
+            self.spaces = 0
 
     def unitsIn(self,unitsIn):
         self.numunits += unitsIn
@@ -47,6 +49,9 @@ class airport(transportcenter):
 
     def remRunways(self,numRunways):
         self.runways -= numRunways
+        if self.runways < 0:
+            print("Can't have negative runways")
+            self.runways = 0
 
     def unitsPrint(self):
         print("Total units in: {}, Total units out: {} Total Runways: {}".format(self.uin,self.uout, self.runways))
