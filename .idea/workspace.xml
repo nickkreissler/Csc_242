@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df47d75c-01a3-4f06-bf5a-22ff84105354" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PA1 2.iml" afterPath="$PROJECT_DIR$/.idea/PA1 2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PA1template.py" afterPath="$PROJECT_DIR$/PA1template.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../bitcoin_graph/.idea/bitcoin-price-api-master.iml" afterPath="$PROJECT_DIR$/../bitcoin_graph/.idea/bitcoin-price-api-master.iml" />
@@ -24,8 +20,8 @@
       <file leaf-file-name="PA1template.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PA1template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+            <state relative-caret-position="204">
+              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -157,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.realtimefileupdate">
+  <component name="RunManager" selected="Python.PA1template">
     <configuration name="PA1template" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -216,9 +212,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.realtimefileupdate" />
-        <item index="1" class="java.lang.String" itemvalue="Python.realtimegraphs" />
-        <item index="2" class="java.lang.String" itemvalue="Python.PA1template" />
+        <item index="0" class="java.lang.String" itemvalue="Python.PA1template" />
+        <item index="1" class="java.lang.String" itemvalue="Python.realtimefileupdate" />
+        <item index="2" class="java.lang.String" itemvalue="Python.realtimegraphs" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +259,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -305,8 +303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PA1template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        <state relative-caret-position="204">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
           <folding />
         </state>
       </provider>
