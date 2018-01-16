@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/PA1 2.iml" filepath="$PROJECT_DIR$/.idea/PA1 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../bitcoin_graph/.idea/bitcoin-price-api-master.iml" filepath="$PROJECT_DIR$/../bitcoin_graph/.idea/bitcoin-price-api-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bitcoin_graph/classes/htmlscraper/.idea/htmlscraper.iml" filepath="$PROJECT_DIR$/../bitcoin_graph/classes/htmlscraper/.idea/htmlscraper.iml" />
+      <module fileurl="file://E:/TWS API/source/pythonclient/.idea/pythonclient.iml" filepath="E:/TWS API/source/pythonclient/.idea/pythonclient.iml" />
     </modules>
   </component>
 </project>
