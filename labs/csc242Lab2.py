@@ -1,8 +1,8 @@
 # Lab 2
 #
-# Your name
+# Nick Kreissler
 #
-# Your collaborators (if any)
+# None
 #
 
 def redo(list):
