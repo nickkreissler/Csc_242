@@ -1,8 +1,8 @@
 # Lab 2
 #
-# Nick Kreissler
+# Your name
 #
-# None
+# Your collaborators (if any)
 #
 
 def redo(list):
@@ -72,6 +72,7 @@ class Fiction(Book):
         self.genre+=genre.upper()
         
     def __repr__(self):
+
         return '{}, "{}", {}, {}, {}, {}, {}, {}'.format(self.typePrint,self.title,self.yearPub,self.pubCo,self.lang,self.author,self.genre,self.plotSumm)
 
 
@@ -82,3 +83,7 @@ class Fiction(Book):
                                                                                                  self.pubCo, redo(self.lang),self.author, redo(self.genre), self.plotSumm)
 
 
+f1 = PrintMedia("My Life On Starship 1", 2070,"We Publish Anyone, INC","AB CEE",["French"] )
+f1
+f1.addLanguage('English')
+print(f1.__str__())

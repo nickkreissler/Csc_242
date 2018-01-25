@@ -1,3 +1,8 @@
+#Nick Kreissler
+
+#Collaborators = 0
+
+
 class Building:
     def __init__(self,squarefootage, yearbuilt):
         self.squarefootage = squarefootage
@@ -12,13 +17,11 @@ class Building:
 
 class Residence(Building):
     def __init__(self, squarefootage, name, yearbuilt, rooms, boolean, value, squarefootagelot, squarefootagelot1):
-        self.squarefootage = squarefootage
         self.name = name
         self.squarefootagesquared = squarefootagelot*squarefootagelot1
         self.rooms = rooms
         self.value = value
         self.boolean = boolean
-        self.age = 2018 - yearbuilt
         if self.boolean == True:
             self.basement = 'basement'
         else:
@@ -41,9 +44,8 @@ class Residence(Building):
         return "Residence {}: {} years old, {:,} square feet, {} rooms, {:,} sq ft lot, {}, value ${:,}".format(self.name, self.age, self.squarefootage,self.rooms,self.squarefootagesquared, self.basement,self.value)
 
 class Commercial(Building):
-    def __init__(self, yearbuilt,squarefootage,floors,zoning,value):
+    def __init__(self, floors,value, zoning,squarefootage, yearbuilt):
         self.age = 2018 - yearbuilt
-        self.squarefootage = squarefootage
         self.floors = floors
         self.zoning = zoning
         self.value = value
@@ -59,10 +61,10 @@ class Commercial(Building):
         return self.value
 
     def __repr__(self):
-        return "Commercial: {}, {:,}, {}, {}, {:,}".format(self.yearbuilt, self.squarefootage, self.floors, self.zoning, self.value)
+        return "Commercial: {}, {:,}, {}, {}, {:,}".format(self.age, self.squarefootage, self.floors, self.zoning, self.value)
 
     def __str__(self):
-        return "Commercial: {} years old, {} square feet, {} floors, {} zoning, value ${}"
+        return "Commercial: {} years old, {:,} square feet, {} floors, {} zoning, value ${:,}".format(self.age, self.squarefootage, self.floors, self.zoning, self.value)
 
 class House(Residence):
     def __init__(self,squarefootage, name, yearbuilt, rooms, boolean, value, squarefootagelot, squarefootagelot1, name1):
@@ -75,10 +77,22 @@ class House(Residence):
     def __str__(self):
         return "House {}: {}, {} years old, {:,} square feet, {} rooms, {:,} sq ft lot, {}, value ${:,}".format(self.name, self.name1, self.age, self.squarefootage,self.rooms,self.squarefootagesquared, self.basement,self.value)
 
-
-r1 = Residence(1200, "Windy Corners", 2000, 10 ,True, 55000,200,200)
+print("")
+r1 = Building(6700, 1995)
 print(r1.__repr__())
 print(r1)
+
+print("")
+r1 = Residence(1200, "Windy Corners", 2000, 10 ,False, 55000,200,200)
+print(r1.__repr__())
+print(r1)
+
+print("")
+r1 = Commercial(10,50000,2,10000,1999)
+print(r1.__repr__())
+print(r1)
+
+print("")
 r1 = House(1200, "Windy Corners", 2000, 10 ,False, 55000,200,200,"Ranch")
 print(r1.__repr__())
 print(r1)
