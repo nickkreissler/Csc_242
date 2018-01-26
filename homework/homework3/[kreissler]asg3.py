@@ -1,4 +1,10 @@
 # for use in shuffling
+
+#Does iter have to be in the same class as player
+#what is keep count and what is play card supposed to do
+
+
+
 import random
 
 
@@ -34,13 +40,12 @@ class Player(object):
         self.score1 = 0
         self.hand = hand
         self.card = None
-        self.i = 25
+
 #
 # return card played (top of hand)
 # 
     def playCard(self):
-        pass
-#
+        print(self.hand[26-self.remaining])
 # return number of cards left in hand
 #
     def cardsLeft(self):
@@ -61,19 +66,28 @@ class Player(object):
 # from last one dealt to first
 #
     def sneakPeek(self):
-        x = Iter(self.hand)
-        for j in x:
-            print("{}: {}".format(x.i+1,j))
+        x = iter(self.hand)
+        print("{}: {}".format(None, next(x)))
+    def __iter__(self):
+        self.i = len(self.lst)-1
+        self.lst = self.hand
+        return self.hand
+    def __next__(self):
+        if self.i <= 0:
+            raise StopIteration
+        index = self.i
+        self.i -= 1
+        return self.lst[index]
 #
 # set up the iter
 #
-class Iter:
-    def __init__(self,lst):
-        self.lst = lst
-        self.i = len(self.lst)-1
+    class Iter:
+        def __init__(self,lst):
+            self.lst = lst
+            self.i = len(self.lst)-1
 
-    def __iter__(self):
-        return self
+        def __iter__(self):
+            return self
     
 # set up to show cards in reverse order (last card dealt to first)
     def __next__(self):
@@ -152,7 +166,18 @@ class Game(object):
     # see sample output
     #
     def checkDone(self):
-        pass
+        if self.a == 26:
+            if self.p1.score1 > self.p2.score1:
+                print("Game Winner: {}".format(self.p1.name))
+            elif self.p1.score1 == self.p1.score1:
+                print("TIE!")
+            else:
+                print("Game Winner: {}".format(self.p1.name))
+            print("Ties: {}".format(self.ties))
+            print("{}: {}, {}: {}".format(self.p1.name, self.p1.score1, self.p2.name, self.p2.score1))
+        else:
+            print('Game not over')
+
 
     #
     # Get playing card from top of each player's hand
@@ -208,3 +233,9 @@ print(x.p1.hand)
 print(x.p2.hand)
 
 x.p1.sneakPeek()
+
+
+x.checkDone()
+x.playCards()
+x.p1.playCard()
+print(x.p1.remaining)
